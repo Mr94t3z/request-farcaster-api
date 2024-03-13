@@ -12,11 +12,11 @@ def fetch_user_data(user_ids):
 
         if response.status_code == 200:
             user_info = response.json()
-            if 'result' in user_info and 'extras' in user_info['result']:
+            if 'result' in user_info and 'user' in user_info['result']:
                 extras_info = user_info['result']['extras']
                 user_data.append({
                     'fid': extras_info.get('fid', None),
-                    'username': user_info['result']['user']['username'],
+                    'username': user_info['result']['user'].get('username', None),
                     'custodyAddress': extras_info.get('custodyAddress', None)
                 })
                 print(f"Saved account data for fid = {extras_info.get('fid')}")
@@ -34,7 +34,7 @@ user_ids = list(range(1, 1001))
 user_data = fetch_user_data(user_ids)
 
 # Specify the folder where you want to save the file
-folder_name = "address_early_1k_farcaster_users"
+folder_name = "fitered_early_1k_farcaster_users"
 
 # Create the folder if it doesn't exist
 if not os.path.exists(folder_name):
