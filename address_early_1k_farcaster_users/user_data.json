@@ -1,0 +1,22 @@
+[
+    {
+        "fid": 1,
+        "username": "farcaster",
+        "custodyAddress": "0x8773442740c17c9d0f0b87022c722f9a136206ed"
+    },
+    {
+        "fid": 2,
+        "username": "v",
+        "custodyAddress": "0x4114e33eb831858649ea3702e1c9a2db3f626446"
+    },
+    {
+        "fid": 3,
+        "username": "dwr.eth",
+        "custodyAddress": "0x6b0bda3f2ffed5efc83fa8c024acff1dd45793f1"
+    },
+    {
+        "fid": 4,
+        "username": "noah",
+        "custodyAddress": "0xea384b570a23e806a38148e87e6177028afdbae5"
+    }
+]
